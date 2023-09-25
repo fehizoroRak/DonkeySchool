@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="My first portfolio in html">
         <meta name="author" content="Fehizoro">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
         <title>Mon Portfolio</title>
     </head>
@@ -12,22 +13,44 @@
     <body>
         <header>
 
-            <h1>MON PORTFOLIO</h1>
+            <h1 id="monportfolio">MON PORTFOLIO</h1>
 
             <nav>
 
-                <ul>
-                    <li><a href="#" title="link to go to my project">PROJETS</a></li>
+                <ul class="menu">
+                    <li><a href="#" title="link to go to my project">PROJETS</a>
+                        <ul class="sousmenu">
+                            <li><a href="#" title="link to go to project 1">PROJETS
+                                    1</a></li>
+                            <li><a href="#" title="link to go to project 2">PROJETS
+                                    2</a></li>
+                            <li><a href="#" title="link to go to project 3">PROJETS
+                                    3</a></li>
+
+                        </ul>
+
+                    </li>
                     <li><a href="#" title="link to go to my study">ETUDES</a></li>
-                    <li><a href="#" title="link to go to my articles">ARTICLES</a></li>
+                    <li><a href="#" title="link to go to my articles">ARTICLES</a>
+                        <ul class="sousmenu">
+                            <li><a href="#" title="link to go to article 1">ARTICLES
+                                    1</a></li>
+                            <li><a href="#" title="link to go to project 2">ARTICLES
+                                    2
+                                </a></li>
+
+                        </ul>
+
+                    </li>
                     <li><a href="#" title="link to go to my contact">CONTACT</a></li>
                 </ul>
 
             </nav>
 
         </header>
-
-        <img src="1500x300.png" alt="image sur laquelle se trouve mon nom et prénom">
+   
+        <img class="hover-effect"  src="1500x300.png"
+            alt="image sur laquelle se trouve mon nom et prénom">
 
         <p>Nom, Prénom</p>
 
@@ -35,7 +58,7 @@
             <h2>PROJETS REALISES</h2>
 
             <div>
-                <img src="300x300.png" alt="image de mon projet 1">
+                <img  class="hover-effect" src="tree.png" alt="image de mon projet 1">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam aliquid consectetur distinctio. Fugiat eius,
                     consectetur exercitationem ea a iusto. Ratione non doloribus
@@ -45,7 +68,7 @@
             </div>
 
             <div>
-                <img src="300x300.png" alt="image de mon projet 2">
+                <img class="hover-effect" src="300x300.png" alt="image de mon projet 2">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam aliquid consectetur distinctio. Fugiat eius,
                     consectetur exercitationem ea a iusto. Ratione non doloribus
@@ -55,7 +78,7 @@
             </div>
 
             <div>
-                <img src="300x300.png" alt="image de mon projet 3">
+                <img class="hover-effect" src="300x300.png" alt="image de mon projet 3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam aliquid consectetur distinctio. Fugiat eius,
                     consectetur exercitationem ea a iusto. Ratione non doloribus
@@ -69,7 +92,7 @@
         <section>
             <h2>ETUDES</h2>
 
-            <img src="200x200.png" alt="Ma Photo d'identité">
+            <img class="hover-effect" src="200x200.png" alt="Ma Photo d'identité">
             <p>
                 Nom <br>
                 Prénom <br>
@@ -113,7 +136,7 @@
         <article>
             <h2>ARTICLES</h2>
             <section>
-                <img src="500x300.png" alt="Image of article1">
+                <img class="hover-effect" src="500x300.png" alt="Image of article1">
                 <h3>Article 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                     voluptatibus tempora animi ab, voluptatem sequi vitae
@@ -129,7 +152,7 @@
             </section>
 
             <section>
-                <img src="500x300.png" alt="Image of article2">
+                <img class="hover-effect" src="500x300.png" alt="Image of article2">
                 <h3>Article 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                     voluptatibus tempora animi ab, voluptatem sequi vitae
@@ -150,7 +173,8 @@
             <form action="#" method="post">
                 <div>
                     <div><label for="nom">Votre nom et prénom</label></div>
-                    <input type="text" id="nom" name="nom" placeholder="For example Martin"
+                    <input type="text" id="nom" name="nom"
+                        placeholder="For example Martin"
                         required>
                 </div>
                 <div>
