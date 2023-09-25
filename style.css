@@ -23,7 +23,7 @@
 
 .menu li {
     float: left;
-    width: 300px;
+    width: 350px;
 }
 
 .menu li a:link, .menu li a:visited {
@@ -68,4 +68,16 @@
 
 .menu li:hover .sousmenu {
     display: block;
+}
+
+img{
+    border-radius: 3px;
+}
+
+.hover-effect:hover{
+    opacity: 0.33;
+}
+
+div .hover-effect:nth-child(1){
+    filter: grayscale(1);
 }
